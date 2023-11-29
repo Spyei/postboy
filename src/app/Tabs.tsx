@@ -10,11 +10,10 @@ export default function Tabs({ tabs }: { tabs: { name: string; action?: (() => v
 
     return (
         <>
-            <div className="relative w-max h-12 grid grid-cols-3 items-center px-1 overflow-hidden transition text-white">
+            <div className="relative w-max h-12 grid grid-cols-3 items-center transition text-white">
                 <div
-                    className="absolute h-11 my-auto top-0 left-0 rounded-lg bg-neutral-700 transition-transform"
+                    className="absolute top-0 left-0 rounded-lg bg-neutral-700 transition-transform w-1/3 h-12"
                     style={{
-                        width: "33%",
                         transform: `translateX(${(activeTab - 1) * 100}%)`,
                         transition: "transform 0.2s ease-in-out",
                     }}
