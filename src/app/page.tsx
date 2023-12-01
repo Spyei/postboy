@@ -1,5 +1,5 @@
-import Input from "./Input";
-import Tabs from "./Tabs";
+import Input from "../components/Mixed/Input";
+import Tabs from "../components/Mixed/Tabs";
 
 export default function Home() {
     return (
